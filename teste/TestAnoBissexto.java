@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class TestAnoBissexto {
 
-    @BeforeEach
+    @Test
     public void verificaBissexto1(){
         AnoBissexto ano = new AnoBissexto();
         assertTrue(ano.main(1988));
