@@ -1,24 +1,25 @@
 import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 public class TestAnoBissexto {
 
-    @Test
-    public void verificaBissexto(){
+    @BeforeEach
+    public void verificaBissexto1(){
         AnoBissexto ano = new AnoBissexto();
         assertTrue(ano.main(1988));
         assertTrue(ano.main(1992));
         assertTrue(ano.main(1996));
         assertTrue(ano.main(2000));
-        assertTrue(ano.main(1998));
-        assertTrue(ano.main(1700));
-        assertTrue(ano.main(1800));
-        assertTrue(ano.main(1900));
-        assertTrue(ano.main(2100));
-        assertTrue(ano.main(2200));
-        assertTrue(ano.main(2300));
-        assertTrue(ano.main(2500));
-        assertTrue(ano.main(2600));
+        assertFalse(ano.main(1998));
+        assertFalse(ano.main(1700));
+        assertFalse(ano.main(1800));
+        assertFalse(ano.main(1900));
+        assertFalse(ano.main(2100));
+        assertFalse(ano.main(2200));
+        assertFalse(ano.main(2300));
+        assertFalse(ano.main(2500));
+        assertFalse(ano.main(2600));
     }
 }
