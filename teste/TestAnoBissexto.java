@@ -1,13 +1,14 @@
 import static org.junit.Assert.*;
-import org.junit.Assert;
+import static org.hamcrest.core.Is.is;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 
 public class TestAnoBissexto {
 
     @Test
-    public void verificaBissexto1(){
+    public void verificaBissexto() {
         AnoBissexto ano = new AnoBissexto();
+
         assertTrue(ano.main(1988));
         assertTrue(ano.main(1992));
         assertTrue(ano.main(1996));
